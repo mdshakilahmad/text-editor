@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="bg-slate-100">
-    <div class="bg-blue-300 w-4/5 h-4/5 mx-auto py-8 px-8 mt-10 rounded-md">
+    <div
+      class="bg-blue-300 lg:w-4/5 lg:h-4/5 mx-auto py-8 px-8 lg:mt-10 rounded-md"
+    >
       <h1 class="text-center text-3xl font-semibold font-mono mb-5">
         My Text Editor
       </h1>
       <div class="border border-gray-900 bg-blue-200 p-3">
-        <div class="flex justify-between ps-5 pr-14">
-          <div class="grid grid-cols-3 gap-5">
+        <div class="flex justify-between lg:ps-5 lg:pr-14 px-5">
+          <div class="grid lg:grid-cols-3 gap-5">
             <button id="boldElementText">
               <i class="fa-solid fa-bold"></i>
             </button>
@@ -29,7 +31,7 @@
               <i class="fa-solid fa-u"></i>
             </button>
           </div>
-          <div class="grid grid-cols-4 gap-5">
+          <div class="grid lg:grid-cols-4 gap-5">
             <button id="align-left">
               <i class="fa-solid fa-align-left"></i>
             </button>
@@ -43,7 +45,7 @@
               <i class="fa-solid fa-align-justify"></i>
             </button>
           </div>
-          <div class="grid grid-cols-3">
+          <div class="grid lg:grid-cols-3">
             <span>
               Fon-size:
               <input
@@ -55,7 +57,9 @@
                 value="16"
               />
             </span>
-            <button id="upperOrLowercase">aA</button>
+            <button id="upperOrLowercase" class="text-left lg:text-center">
+              aA
+            </button>
             <input type="color" name="" id="input-color" />
           </div>
         </div>
